@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = st.secrets.get("API_URL", ")
+API_URL = st.secrets.get("API_URL", 46.1.155.61 ")
 
 st.title("TalepBazlı Emlak (Ters Sahibinden)")
 
