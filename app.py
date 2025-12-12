@@ -1,3 +1,8 @@
+import warnings
+from pydantic.warnings import PydanticDeprecatedSince20
+
+warnings.filterwarnings("ignore", category=PydanticDeprecatedSince20)
+warnings.filterwarnings("ignore", message=".*Valid config keys have changed in V2.*")
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 model_config = ConfigDict(from_attributes=True)
