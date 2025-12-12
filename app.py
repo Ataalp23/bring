@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+model_config = ConfigDict(from_attributes=True)
 from typing import Optional, List
 from datetime import datetime
 
